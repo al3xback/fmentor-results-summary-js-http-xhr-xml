@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: inherit;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+}
+
+.btn--primary {
+	position: relative;
+	z-index: 1;
+	padding: func.em(14);
+	background-color: var.$color-dark-gray-blue;
+	border-radius: 30px;
+	color: var.$color-white;
+}
+
+.btn--primary::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-image: linear-gradient(
+		var.$color-light-slate-blue,
+		var.$color-light-royal-blue
+	);
+	border-radius: inherit;
+	opacity: 0;
+	transition: inherit;
+}
+
+.btn--primary:hover::before {
+	opacity: 1;
+}
+
+.btn--link {
+	color: var.$color-light-slate-blue;
+}
+
+.btn--link:hover {
+	color: var.$color-light-royal-blue;
+}
+
+.btn--full {
+	display: flex;
+	width: 100%;
+}

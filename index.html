@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Frontend Mentor | Results Summary Component | JS HTTP - XHR - XML
+		</title>
+
+		<!-- Core Meta Data -->
+		<meta
+			name="description"
+			content="Frontend Mentor - Results summary component solution." />
+		<meta
+			name="keywords"
+			content="Frontend Mentor, Results summary component" />
+
+		<!-- Behavioral Meta Data -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="favicon.png" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- Scripts -->
+		<script src="js/main.js" defer type="module"></script>
+	</head>
+	<body>
+		<style>
+			.card-wrapper {
+				flex: auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		</style>
+
+		<template id="card-category-template">
+			<li class="card__data-item">
+				<img class="card__data-img" width="20" height="20" />
+				<h3 class="card__data-title"></h3>
+				<p class="card__data-score"><span></span><span>/ 100</span></p>
+			</li>
+		</template>
+
+		<template id="card-template">
+			<div class="card">
+				<div class="card__result">
+					<h2 class="card__title"></h2>
+					<div class="card__chart">
+						<span class="card__chart-score extra-bold"></span>
+						<span>of 100</span>
+					</div>
+					<div class="card__desc">
+						<h3 class="card__desc-title"></h3>
+						<p class="card__desc-content"></p>
+					</div>
+				</div>
+				<div class="card__summary">
+					<h2 class="card__title"></h2>
+					<ul class="card__data-list"></ul>
+					<button type="button" class="btn btn--primary btn--full">
+						Continue
+					</button>
+				</div>
+			</div>
+		</template>
+
+		<header>
+			<h1 class="sr-only">Results summary component</h1>
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="card-wrapper">
+					<p class="loading">Fetching card data...</p>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						class="btn btn--link"
+						rel="noopener"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by
+					<a
+						href="https://github.com/al3xback"
+						class="btn btn--link"
+						rel="noopener"
+						target="_blank"
+						>al3xback</a
+					>.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

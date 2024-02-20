@@ -1,0 +1,16 @@
+main,
+main > .container {
+	display: flex;
+	flex: auto;
+}
+
+main > .container {
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media (min-width: 48em) {
+	main > .container {
+		align-items: center;
+	}
+}
