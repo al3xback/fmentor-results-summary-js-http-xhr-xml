@@ -77,11 +77,14 @@ const renderCardContent = (data) => {
 		resultChart[0].indexOf(' ') + 1
 	);
 
-	const cardResultDescTitleEl = cardEl.querySelector('.card__desc-title');
-	cardResultDescTitleEl.textContent = resultChart[1];
+	const cardResultDescriptionTitleEl =
+		cardResultEl.querySelector('.card__desc-title');
+	cardResultDescriptionTitleEl.textContent = resultChart[1];
 
-	const cardResultDescContentEl = cardEl.querySelector('.card__desc-content');
-	cardResultDescContentEl.textContent = resultChart[2];
+	const cardResultDescriptionContentEl = cardResultEl.querySelector(
+		'.card__desc-content'
+	);
+	cardResultDescriptionContentEl.textContent = resultChart[2];
 
 	/* card summary */
 	const cardSummaryTitleEl = cardSummaryEl.querySelector('.card__title');
