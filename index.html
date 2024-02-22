@@ -44,7 +44,21 @@
 			}
 		</style>
 
-		<template id="card-category-template">
+		<template id="card-result-template">
+			<div class="card__result">
+				<h2 class="card__title"></h2>
+				<div class="card__chart">
+					<span class="card__chart-score extra-bold"></span>
+					<span>of 100</span>
+				</div>
+				<div class="card__desc">
+					<h3 class="card__desc-title"></h3>
+					<p class="card__desc-content"></p>
+				</div>
+			</div>
+		</template>
+
+		<template id="card-data-item-template">
 			<li class="card__data-item">
 				<img class="card__data-img" width="20" height="20" />
 				<h3 class="card__data-title"></h3>
@@ -52,27 +66,18 @@
 			</li>
 		</template>
 
-		<template id="card-template">
-			<div class="card">
-				<div class="card__result">
-					<h2 class="card__title"></h2>
-					<div class="card__chart">
-						<span class="card__chart-score extra-bold"></span>
-						<span>of 100</span>
-					</div>
-					<div class="card__desc">
-						<h3 class="card__desc-title"></h3>
-						<p class="card__desc-content"></p>
-					</div>
-				</div>
-				<div class="card__summary">
-					<h2 class="card__title"></h2>
-					<ul class="card__data-list"></ul>
-					<button type="button" class="btn btn--primary btn--full">
-						Continue
-					</button>
-				</div>
+		<template id="card-summary-template">
+			<div class="card__summary">
+				<h2 class="card__title"></h2>
+				<ul class="card__data-list"></ul>
+				<button type="button" class="btn btn--primary btn--full">
+					Continue
+				</button>
 			</div>
+		</template>
+
+		<template id="card-template">
+			<div class="card"></div>
 		</template>
 
 		<header>
